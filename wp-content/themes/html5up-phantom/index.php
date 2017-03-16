@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Menu -->
-<nav id="menu">
+<!--<nav id="menu">
     <h2>Menu</h2>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -10,150 +10,47 @@
         <li><a href="generic.html">Consequat dolor</a></li>
         <li><a href="elements.html">Elements</a></li>
     </ul>
-</nav>
+</nav>-->
 
 <!-- Main -->
 <div id="main">
     <div class="inner">
+
         <header>
             <h1>This is Phantom, a free, fully responsive site<br />
                 template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
             <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
         </header>
+
+        <?php
+        if (!have_posts()){
+            echo "<h2>Nenhum conteúdo encontrado...</h2>";
+        } else {?>
         <section class="tiles">
+            <?php while(have_posts()){
+                the_post();
+                global $post;
+            ?>
             <article class="style1">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic01.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Magna</h2>
+                <span class="image">
+                    <?php if(!has_post_thumbnail()){ ?>
+                        <img src="<?php echo THEME_URL; ?>images/pic01.jpg" alt="" />
+                    <?php } else {
+                        the_post_thumbnail('thumbnail');
+                    }
+                    ?>
+
+                </span>
+                <a href="<?php echo get_permalink($post); ?>">
+                    <h2><?php the_title(); ?></h2>
                     <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
+                        <p><?php echo get_the_excerpt(); ?></p>
                     </div>
                 </a>
             </article>
-            <article class="style2">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic02.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Lorem</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
-            <article class="style3">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic03.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Feugiat</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
-            <article class="style4">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic04.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Tempus</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
-            <article class="style5">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic05.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Aliquam</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
-            <article class="style6">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic06.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Veroeros</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
-            <article class="style2">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic07.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Ipsum</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
-            <article class="style3">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic08.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Dolor</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
-            <article class="style1">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic09.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Nullam</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
-            <article class="style5">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic10.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Ultricies</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
-            <article class="style6">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic11.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Dictum</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
-            <article class="style4">
-									<span class="image">
-										<img src="<?php echo THEME_URL; ?>images/pic12.jpg" alt="" />
-									</span>
-                <a href="generic.html">
-                    <h2>Pretium</h2>
-                    <div class="content">
-                        <p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-                    </div>
-                </a>
-            </article>
+            <?php } ?>
         </section>
+        <?php } ?>
     </div>
 </div>
 
