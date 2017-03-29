@@ -8,19 +8,26 @@
           </nav>
 
 
-        <h2>Get in touch</h2>
-        <form method="post" action="#">
+        <h2>Entrar em contato</h2>
+        <form method="post" id="contato" action="<?php echo SITE_URL; ?>#contato">
+          <input type="hidden" name="contact" value="1">
+          <?php
+          global $contact_error;
+          if($contact_error){
+                printf('<p style="color: red;">%s</p>', $contact_error);
+          }
+          ?>
           <div class="field half first">
-            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="text" name="name" id="name" placeholder="Nome" />
           </div>
           <div class="field half">
             <input type="email" name="email" id="email" placeholder="Email" />
           </div>
           <div class="field">
-            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <textarea name="message" id="message" placeholder="Mensagem"></textarea>
           </div>
           <ul class="actions">
-            <li><input type="submit" value="Send" class="special" /></li>
+            <li><input type="submit" value="Enviar" class="special" /></li>
           </ul>
         </form>
       </section>

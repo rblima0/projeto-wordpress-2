@@ -17,8 +17,7 @@
     <div class="inner">
 
         <header>
-            <h1>This is Phantom, a free, fully responsive site<br />
-                template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+            <h1><?php bloginfo('description'); ?></h1>
             <p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
         </header>
 
@@ -27,11 +26,15 @@
             echo "<h2>Nenhum conteúdo encontrado...</h2>";
         } else {?>
         <section class="tiles">
-            <?php while(have_posts()){
+            <?php
+            $color = 0;
+            while(have_posts()){
                 the_post();
+                $color++;
+                if($color > 6 ) $color = 1;
                 global $post;
             ?>
-            <article class="style1">
+            <article class="style<?php echo $color; ?>">
                 <span class="image">
                     <?php if(!has_post_thumbnail()){ ?>
                         <img src="<?php echo THEME_URL; ?>images/pic01.jpg" alt="" />
@@ -50,6 +53,17 @@
             </article>
             <?php } ?>
         </section>
+
+            <nav class="pagination" style="margin-top: 2em;">
+                <?php
+                echo paginate_links(
+                    array(
+                        'prev_text' => 'Mais recentes',
+                        'next_text' => 'Mais antigos'
+                    )
+                );
+                ?>
+            </nav>
         <?php } ?>
     </div>
 </div>
