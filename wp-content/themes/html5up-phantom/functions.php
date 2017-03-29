@@ -125,8 +125,6 @@ function custom_contact(){
                 } else {
                     wp_die('Mensagem Enviada com sucesso');
                 }
-
-                wp_die('Mensagem enviada com sucesso !');
             }
         }
 }
