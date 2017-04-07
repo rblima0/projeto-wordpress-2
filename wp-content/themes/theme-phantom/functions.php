@@ -48,7 +48,7 @@ function set_smtp_credentials( $phpmailer ) {
 
 define('THEME_URL', get_bloginfo('template_url') . "/");
 define('SITE_NAME', get_bloginfo('name'));
-define('SITE_URL', get_bloginfo('url'));
+define('SITE_URL', get_bloginfo('url').'/');
 
 //CRIANDO MENU
 add_action('after_setup_theme', 'custom_setup');
@@ -58,14 +58,21 @@ function custom_setup(){
         'menu-header' => __( 'Cabeçalho' ),
         'menu-footer' => __('Rodapé')
     ) );
+
+    //COLOCANDO OPÇÃO DE INSERIR THUMBNAIL
+    add_theme_support("post-thumbnails");
+
+    //DIMINUINDO QUANTIDADE DE CARACTERES
+    add_filter('excerpt_length', 'custom_excerpt_length');
+    add_filter('excerpt_more', 'custom_excerpt_more');
+
+    add_image_size('cover', 353, 326, true);
+
+    //FILTRO PARA RETIRAR TAMANHO
+    add_filter('post_thumbnail_html', 'custom_thumbnail_html');
+
+    add_action('init', 'custom_contact');
 }
-
-//COLOCANDO OPÇÃO DE INSERIR THUMBNAIL
-add_theme_support("post-thumbnails");
-
-//DIMINUINDO QUANTIDADE DE CARACTERES
-add_filter('excerpt_length', 'custom_excerpt_length');
-add_filter('excerpt_more', 'custom_excerpt_more');
 
 function custom_excerpt_length(){
     return 10;
@@ -74,11 +81,6 @@ function custom_excerpt_length(){
 function custom_excerpt_more(){
     return " ... ";
 }
-
-add_image_size('cover', 353, 326, true);
-
-//FILTRO PARA RETIRAR TAMANHO
-add_filter('post_thumbnail_html', 'custom_thumbnail_html');
 
 function custom_thumbnail_html($html){
     return preg_replace(
@@ -90,7 +92,6 @@ function custom_thumbnail_html($html){
         $html
     );
 }
-add_action('init', 'custom_contact');
 
 function custom_contact(){
     global $contact_error;
