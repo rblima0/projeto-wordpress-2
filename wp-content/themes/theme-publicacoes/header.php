@@ -15,7 +15,7 @@
     <div id="header-wrapper">
         <div id="header" class="container">
             <div id="logo">
-                h1><a href="<?php echo PW_URL; ?>" title="<?php echo PW_SITE_NAME; ?>"><?php echo PW_SITE_NAME; ?></a></h1>
+                <h1><a href="<?php echo PW_URL; ?>" title="<?php echo PW_SITE_NAME; ?>"><?php echo PW_SITE_NAME; ?></a></h1>
             </div>
             <div id="menu">
                 <?php wp_nav_menu('menu-header'); ?>

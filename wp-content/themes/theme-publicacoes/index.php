@@ -1,7 +1,17 @@
 <?php get_header(); ?>
 <div id="page">
         <div id="content">
-            <?php while(have_posts()){ the_post(); ?>
+            <?php
+            if ( !is_home() ) {
+                $title = 'Arquivo';
+                if ( is_search() ) {
+                    $title = 'Resultados da busca por "' . get_search_query() . '"';
+                } else if ( is_category() ){
+                    $title = 'Categoria: ' . single_cat_title( '', false );
+                }
+                echo "<h1>{$title}</h1>";
+            }
+            while(have_posts()){ the_post(); ?>
             <div class="post">
                 <h2 class="title">
                     <?php

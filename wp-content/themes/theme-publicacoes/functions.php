@@ -72,4 +72,32 @@ function pw_paginate_links()
         ) . '</nav>';
 }
 
+function pw_list_comments( $comment, $args, $depth ){
+    if ( $comment->comment_type == ''){
+        $comment_id = (int) $comment->comment_ID;
+        $author = get_comment_author_link();
+
+        $content = get_comment_text();
+        $avatar = get_avatar( $comment, 80 );
+        $date_time = get_comment_date( 'd/m/Y H:i' );
+
+        $reply = get_comment_reply_link(
+            array_merge( $args, array(
+                    'reply_text'    => 'Responder',
+                    'respond_id'    => 'responder',
+                    'depth'         => $depth
+                )
+            )
+        );
+
+        echo '<li id="li-comment-' . $comment_id . '">';
+        echo '<div id="comment-' . $comment_id . '">';
+
+        echo $avatar . $author . '<br />Enviado em ' . $date_time . ' | ' . $reply;
+        echo "<div class=\"comment-text\">{$content}</div>";
+
+        echo '</div>';
+    }
+}
+
 ?>
