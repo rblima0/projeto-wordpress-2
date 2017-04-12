@@ -1,0 +1,2 @@
+the_ são de formatação do resultado a ser exibido; já que se utilizam dos valores globais para definir qual dado exibir.
+get_ são a definição de quais resultados recuperar
