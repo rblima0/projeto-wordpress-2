@@ -30,7 +30,6 @@
                     <?php the_excerpt(); ?>
                     <p class="links">
                         <a href="<?php the_permalink(); ?>" title="Leia mais" class="more">Leia Mais</a>
-                        <a href="<?php the_permalink(); ?>" title="Comentários" class="comments">Comentários</a>
                     </p>
                 </div>
             </div>
