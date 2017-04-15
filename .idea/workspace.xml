@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="842075fa-0a46-487e-826b-54261328b536" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/assets/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/comments.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/home.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/page.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/pg-about.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/pg-contact.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/pg-full-width.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/search.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/sidebar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/single.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/style.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/default.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/theme-talentagent/license.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/theme-receitas/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/theme-publicacoes/index.php" afterPath="$PROJECT_DIR$/wp-content/themes/theme-publicacoes/index.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +37,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/html5up-phantom/page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/html5up-phantom/404.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/html5up-phantom/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/baseball-brasil/style.css" />
@@ -105,6 +87,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/theme-talentagent/pg-contact.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/theme-talentagent/page.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/theme-talentagent/pg-about.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/theme-receitas/style.css" />
       </list>
     </option>
   </component>
@@ -214,6 +197,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\projeto-wordpress-2\wp-content\themes\theme-receitas" />
       <recent name="C:\wamp64\www\projeto-wordpress-2\wp-content\themes\theme-publicacoes" />
     </key>
   </component>
@@ -269,12 +253,12 @@
       <workItem from="1491315042478" duration="2861000" />
       <workItem from="1491502724897" duration="52488000" />
       <workItem from="1492034940649" duration="117000" />
-      <workItem from="1492035999531" duration="20355000" />
+      <workItem from="1492035999531" duration="21714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116785000" />
+    <option name="totallyTimeSpent" value="118144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="1040" extended-state="1" />
@@ -318,27 +302,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/keyboard/header.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/theme-baseball-brasil/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/keyboard/sidebar.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/keyboard/search.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/keyboard/index.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/keyboard/single.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/keyboard/comments.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/keyboard/functions.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/theme-publicacoes/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/theme-personal/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -671,6 +637,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/theme-publicacoes/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/receitas/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/receitas/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/receitas/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/theme-receitas/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/theme-receitas/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="281" selection-start-line="2" selection-start-column="107" selection-end-line="2" selection-end-column="281" />
           <folding />
         </state>
       </provider>
