@@ -422,3 +422,42 @@ a:hover {
 {
 	border-radius: 8px;
 }
+
+/** Custom **/
+
+.pagination {
+	margin: 20px;
+}
+
+#loginform p {
+	margin: 0 0 5px 0;
+}
+
+#loginform input[type="text"],
+#loginform input[type="password"] {
+	width: 100px;
+	outline: none;
+	background: #F5F0E7;
+	border: 1px solid #D7D0C0;
+	padding: 10px;
+	border-radius: 8px;
+	text-transform: lowercase;
+	font-family: 'Open Sans', sans-serif;
+	color: #454545;
+}
+#loginform label {
+	display: inline-block;
+	width: 150px;
+}
+#loginform input[type="submit"] {
+	padding: 10px 20px;
+	border: 0;
+	background: #222;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 14px;
+	margin-left: 155px;
+}
+#loginform input[type="submit"]:hover {
+	background: #d65f00;
+}

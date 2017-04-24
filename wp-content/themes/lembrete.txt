@@ -1,2 +1,7 @@
 the_ são de formatação do resultado a ser exibido; já que se utilizam dos valores globais para definir qual dado exibir.
 get_ são a definição de quais resultados recuperar
+
+A denominação Template Tags é atribuída as funções que o WordPress disponibiliza com intuito de tratar o conteúdo e aplicar seus resultados dentro de um Tema. São Template Tags as funções the_title, the_content, the_permalink e outras mais com esses mesmos propósitos.
+
+Caso precise executar tarefas relacionadas a atividades do sistema, utilize as ações;
+E para tratar as informações recuperadas aplique os filtros;
