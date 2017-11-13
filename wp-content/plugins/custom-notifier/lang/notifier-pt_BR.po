@@ -1,0 +1,55 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Teste\n"
+"POT-Creation-Date: 2014-02-17 22:13-0300\n"
+"PO-Revision-Date: 2014-02-18 09:08-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n:1,2;_x:1,2c;"
+"_nx:4c,1,2;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: /var/www/wordpress/wp-content/plugins/custom-"
+"notifier\n"
+
+#: /var/www/wordpress/wp-content/plugins/custom-notifier/index.php:99
+msgid "Translatable text "
+msgstr "Texto traduzível"
+
+#: /var/www/wordpress/wp-content/plugins/custom-notifier/index.php:100
+msgid "Singular"
+msgid_plural "Plural"
+msgstr[0] "Forma no singular"
+msgstr[1] "Forma no plural"
+
+#: /var/www/wordpress/wp-content/plugins/custom-notifier/index.php:102
+msgctxt "button"
+msgid "Text"
+msgstr "Simples Texto"
+
+#: /var/www/wordpress/wp-content/plugins/custom-notifier/index.php:103
+msgctxt "header"
+msgid "Text"
+msgstr "Simples texto do cabeçalho"
+
+#: /var/www/wordpress/wp-content/plugins/custom-notifier/index.php:104
+msgctxt "reference"
+msgid "Singular"
+msgid_plural "Plural"
+msgstr[0] "Forma no singular"
+msgstr[1] "Forma no plural"
+
+#: /var/www/wordpress/wp-content/plugins/custom-notifier/index.php:106
+#: /var/www/wordpress/wp-content/plugins/custom-notifier/index.php:107
+msgid "Example"
+msgstr "Exemplo"
+
+#: /var/www/wordpress/wp-content/plugins/custom-notifier/index.php:108
+msgctxt "test only"
+msgid "Example"
+msgstr "Exemplo de teste"

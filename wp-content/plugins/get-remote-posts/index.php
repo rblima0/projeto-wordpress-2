@@ -27,6 +27,7 @@ class KDM_Posts{
         delete_transient('grp');
     }
 
+    // Criando um Menu na lateral do Wordpress na administação
     function init(){
 		add_action('admin_menu', array('KDM_Posts', 'admin_menu'));
     }
