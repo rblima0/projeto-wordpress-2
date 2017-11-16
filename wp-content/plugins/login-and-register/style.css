@@ -1,0 +1,119 @@
+
+/** Reset & struct **/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset,
+input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0;
+}
+ol, ul {
+    list-style: none;
+}
+caption, th {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1em;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+.wrap {
+    width: 960px;
+    margin: auto;
+    text-align: left;
+}
+.wrap:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+a {
+    color: #036;
+    text-decoration: none;
+}
+a:hover {
+    color: #369;
+    text-decoration: underline;
+}
+
+/** Custom **/
+
+.wrap {
+    position: relative;
+    width: 260px;
+    margin-top: 100px;
+}
+form {
+    width: 100%;
+    margin-top: 10px;
+}
+form div {
+    margin-bottom: 10px;
+}
+form div:last-child {
+    text-align: center;
+}
+label, input {
+    display: block;
+}
+input {
+    border: 1px solid #777;
+    padding: 10px;
+    width: 238px;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    cursor: pointer;
+    margin: auto;
+    width: auto;
+    padding: 10px 20px;
+    background: #036;
+    color: #fff;
+    border: 0;
+}
+input[type="submit"]:hover {
+    background: #369;
+}
+
+p.error, p.success {
+    position: absolute;
+    padding: 10px 0;
+    text-align: center;
+    width: 480px;
+    left: -110px;
+    top: -60px;
+    color: #fff;
+    font-weight: bold;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+p.error a, p.success a {
+    color: #fff;
+}
+
+p.error {
+    background: #900;
+}
+p.success {
+    background: #090;
+}

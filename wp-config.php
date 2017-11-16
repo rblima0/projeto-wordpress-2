@@ -85,6 +85,15 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
+// DESABILITA A OPÇÃO DE EDITOR DE PLUGINS E DO TEMA NA ABA DE ADMINISTRAÇÃO
+define('DISALLOW_FILE_EDIT', true);
+
+// CUSTOMIZA A QUANTIDADE DE REVISÕES A SEREM SALVAS
+define('WP_POST_REVISIONS', 3);
+
+// CUSTOMIZAR O AUTOSAVE PARA SALVAR AUTOMATICAMENTE DE TEMPO EM TEMPO
+define('AUTOSAVE_INTERVAL', 2);
+
 /* Isto é tudo, pode parar de editar! :) */
 
 /** Caminho absoluto para o diretório WordPress. */

@@ -16,4 +16,22 @@ function custom_setup()
     add_filter( 'pre_get_posts', array( 'Theme', 'pre_get_posts' ) );
 
     register_nav_menu('menu-sidebar', 'Menu da Sidebar');
+
+    //CONTROLA A QUANTIDADE DE REVISÕES DIRETO NO TEMA
+    add_filter('wp_revisions_to_keep', 'limit_revisions', 10, 2);
+
+    //REMOVENDO O AUTOSAVE
+    add_action('admin_init', 'remove_autosave');
+
+}
+
+function limit_revisions( $limit, $post ){
+    if( $post->post_type == 'post' )
+        $limit = 2;
+
+    return $limit;
+}
+
+function remove_autosave(){
+    wp_deregister_script('autosave');
 }
